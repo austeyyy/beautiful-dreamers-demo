@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- content tags used by search engines-->
+    <meta charset="UTF-8">
+    <meta name="Keywords" content="HTML, CSS, Javascript">
+    <meta name = "author" content = "Austen Young">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    
+    <!-- linking stylesheets for bootstrap framework-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!--Linking Personal StyleSheets and Scripts-->
+    <link rel="stylesheet" href="css/beautiful-dreamers-css.css">
+    <script src="js/beautiful-dreamers-script.js"></script>
+
+
+    <!--Nunito Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="images/BD_Favicon.png"/>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <title>Beautiful Dreamers</title>
+</head>
+<body>
+
+    <!-- NAV-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+        <div class="container-fluid">
+            <!-- Mobile menu button - moved to start -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Left menu -->
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="shop-all-page.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="#">Our Story</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <!-- Center logo -->
+            <a class="navbar-brand mx-auto" href="index.html">
+                <img class="logo" src="images/BD_Logo.png" alt="Logo">
+            </a>
+            <!-- Right shopping bag icon -->
+            <div class="flex-grow-0">
+                <a class="nav-link position-relative" onClick="clearCart()" href="#">
+                    <i class="bi bi-bag mx-3">
+                        
+                    </i>
+                    
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+
+        <div class="row mt-5 px-5">
+            <!-- Image Column -->
+            <div class="col-12 col-lg-6">
+                <div class="d-flex flex-column">
+                    <img src="images/BD_UnderwaterSet.jpeg" class="img-fluid border rounded mb-2" alt="Space Adventures Bedding Set">
+
+                    <!--Image Preview Carousel-->
+                    <div id = "parentCarousel" class="carousel carousel-dark slide d-lg-block d-md-block d-none my-4">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+
+                                <div class="d-flex justify-content-center mx-5 px-5">
+
+                                   
+                                    <div class="align-items-center text-center">
+                                        <img src="images/BD_UnderwaterSet.jpeg" class = "img-fluid img-preview-bg rounded-3 w-50" alt = "imgpreview">     
+                                    </div>
+
+                                    
+                                    <div class="align-items-center text-center">
+                                        <img src="images/BD_UnderwaterSet.jpeg" class = "img-fluid img-preview rounded-3 w-75" alt = "imgpreview"> 
+                                    </div>
+                               
+                                    <div class="align-items-center text-center">
+                                        <img src="images/BD_UnderwaterSet.jpeg" class = "img-fluid img-preview-bg rounded-3 w-50" alt = "imgpreview">
+                                    </div>
+      
+                              </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Previous Page Button-->
+                        <button class="carousel-control-prev d-lg-block d-none w-25" type="button" data-bs-target="#parentCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+
+                        <!-- Next Page Button-->
+                        <button class="carousel-control-next d-lg-block d-none w-25" type="button" data-bs-target="#parentCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        
+                            
+                        
+                    </div>
+
+                </div>
+            </div>
+    
+            <!-- Product Info Column -->
+            <div class="col-12 col-lg-6">
+                <div class="d-flex flex-column gap-2">
+                    <h2>Underwater Explorers Bedding Set</h2>
+                    
+                    <!-- Rating -->
+                    <div class="d-flex align-items-center">
+                        <div class="d-flex">
+                            <img src="images/BlueStars.svg" class = "img-fluid stars me-2" alt="BlueStars">
+                        </div>
+                        <span>4.8 (3)</span>
+                    </div>
+    
+                    <h4 class="mt-2">$75.00</h4>
+    
+                    <div class="mt-2">
+                        <h4>Includes:</h4>
+                        <ul class="list-unstyled">
+                            <li>1x Marine Discovery Comforter</li>
+                            <li>1x Sea Scientist Pillowcase</li>
+                            <li>1x Deep Sea Sheets</li>
+                        </ul>
+                    </div>
+    
+                    <div class="mt-2">
+                        <h4>Select Size:</h4>
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <button id = "twin" class="btn btn-blue w-100" onClick = "makeActive('twin')">Twin</button>
+                            </div>
+                            <div class="col-6">
+                                <button id = "twinxl" class="btn btn-blue w-100" onClick = "makeActive('twinxl')">TwinXL</button>
+                            </div>
+                            <div class="col-6">
+                                <button id = "full/queen" class="btn btn-blue w-100" onClick = "makeActive('full/queen')">Full/Queen</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href = "#" class="text-decoration-none text-black mt-2"> <span class="size-guide text-uppercase text-decoration-underline">Size Guide</span> </a> 
+
+
+                    <div class="d-flex flex-row mt-2">
+
+                        <!--DropDown Button-->
+                        <div class="dropdown">
+                            <button class="btn btn-clear rounded-2 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" > <span class = "pe-3" id= "quantity"> 1 </span></button>
+    
+                            <!--Dropdown Content-->
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" onClick = "updateQuantity(1)">1</a></li>
+                                <li><a class="dropdown-item" onClick = "updateQuantity(2)">2</a></li>
+                                <li><a class="dropdown-item" onClick = "updateQuantity(3)">3</a></li>
+                                <li><a class="dropdown-item" onClick = "updateQuantity(4)">4</a></li>
+                                <li><a class="dropdown-item" onClick = "updateQuantity(5)">5</a></li>
+                                <li><a class="dropdown-item" onClick = "updateQuantity(6)">6</a></li>
+                                <li><a class="dropdown-item" onClick = "updateQuantity(7)">7</a></li>
+                                <li><a class="dropdown-item" onClick = "updateQuantity(8)">8</a></li>
+                                <li><a class="dropdown-item" onClick = "updateQuantity(9)">9</a></li>
+                            </ul>
+                        </div>
+
+                        <button class="btn btn-coral flex-grow-1 ms-2" onClick = "addToCart()">Add To Cart</button>
+
+                    </div>
+
+
+                    <!--Info Accordions-->
+                    <div class="mt-5">
+
+                        <div class="accordion accordion-flush" id="accordionPanelsStayOpen">
+                            <div class="accordion-item border-top border-bottom bg-transparent">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button bg-transparent text-dark shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                  Design Concept
+                                </button>
+                              </h2>
+                              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                  <p>Our "Underwater Explorers" bedding set dives deep into imagination and inclusivity, following a diverse group of young marine scientists as they discover the mysteries of the ocean. This dynamic design features children of all abilities working together to study marine life, pilot submarines, and protect our oceans, inspiring the next generation of environmental stewards.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item border-top border-bottom bg-transparent">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button bg-transparent text-dark shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                  Fabric & Care
+                                </button>
+                              </h2>
+                              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                  <ul>
+                                    <li><p>The Marine Discovery Comforter is made of 100% cotton for a soft and breathable feel.</p></li>
+                                    <li><p>Sea Scientist Pillowcase is also crafted from 100% cotton.</p></li>
+                                    <li><p>The Deep Sea Sheets are made from a blend of 60% cotton and 40% polyester.</p></li>
+                                    <li><p>Machine wash cold, gentle cycle. Tumble dry low. Do not bleach.</p></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item border-top border-bottom bg-transparent">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button bg-transparent text-dark shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                  Shipping
+                                </button>
+                              </h2>
+                              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li><p>This product ships within 2-3 business days.</p></li>
+                                        <li><p>Free standard shipping on all orders within the contiguous United States.</p></li>
+                                        <li><p>Expedited shipping options are available for an additional fee.</p></li>
+                                        <li><p>International shipping is available to select countries. Additional fees and taxes may apply.</p></li>
+                                        <li><p>If you have any questions or need assistance with your order, please don't hesitate to contact our customer service team.</p></li>
+                                      </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <!--FOOTER-->
+        <div class="row footer pt-4 mt-4">
+            <!-- Quick Links -->
+            <div class="col-12 col-md-6 col-lg-4 my-4 py-4">
+                <p class="text-uppercase mb-3">Quick Links</p>
+                <hr/>
+                <div class="d-flex flex-column gap-2">
+                    <a href="#" class="text-decoration-none footer-text">Shop All Collections</a>
+                    <a href="#" class="text-decoration-none footer-text">About Us</a>
+                    <a href="#" class="text-decoration-none footer-text">Our Mission</a>
+                    <a href="#" class="text-decoration-none footer-text">FAQs</a>
+                    <a href="#" class="text-decoration-none footer-text">Contact Us</a>
+                </div>
+            </div>
+        
+            <!-- Customer Service -->
+            <div class="col-12 col-md-6 col-lg-4 my-4 py-4">
+                <p class="text-uppercase mb-3">Customer Service</p>
+                <hr/>
+                <div class="d-flex flex-column gap-2">
+                    <a href="#" class="text-decoration-none footer-text">Shipping Information</a>
+                    <a href="#" class="text-decoration-none footer-text">Returns & Exchanges</a>
+                    <a href="#" class="text-decoration-none footer-text">Care Instructions</a>
+                    <a href="#" class="text-decoration-none footer-text">Size Guide</a>
+                </div>
+            </div>
+        
+            <!-- Get Updated -->
+            <div class="col-12 col-lg-4 my-4 py-4">
+                <p class="text-uppercase mb-3">Get Updated</p>
+                <hr/>
+                <div class="w-100">
+                    <div id = "subscribeAlertHolder-footer"> </div>
+
+                    <div class="input-group my-4">
+                        <input type="email" class="form-control rounded-start-3" id= "subscribeInput-footer" placeholder="Enter your email" aria-label="Enter your email">
+                        <button class="btn btn-coral" type="button" id = "subscribeButton-footer" onClick = "checkEmail('footer')">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+    </div>
+
+    
+</body>
+</html>

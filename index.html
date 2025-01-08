@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- content tags used by search engines-->
+    <meta charset="UTF-8">
+    <meta name="Keywords" content="HTML, CSS, Javascript">
+    <meta name = "author" content = "Austen Young">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    
+    <!-- linking stylesheets for bootstrap framework-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!--Linking Personal StyleSheets and Scripts-->
+    <link rel="stylesheet" href="css/beautiful-dreamers-css.css">
+    <script src="js/beautiful-dreamers-script.js"></script>
+
+    <!--Nunito Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <!--Georgia Font-->
+    <link rel="stylesheet" href="https://use.typekit.net/tmh3fqt.css">
+
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="images/BD_Favicon.png"/>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <title>Beautiful Dreamers</title>
+
+   
+
+</head>
+<body>
+
+    <!-- NAV-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+        <div class="container-fluid">
+            <!-- Mobile menu button - moved to start -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Left menu -->
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="shop-all-page.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="#">Our Story</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <!-- Center logo -->
+            <a class="navbar-brand mx-auto" href="index.html">
+                <img class="logo" src="images/BD_Logo.png" alt="Logo">
+            </a>
+    
+            <!-- Right shopping bag icon -->
+            <div class="flex-grow-0">
+                <a class="nav-link position-relative" onClick = "clearCart()" href="#">
+                    <i class="bi bi-bag mx-3"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!--HERO-->
+    <div class="row g-0">
+        <div class="col-12 position-relative p-0">
+            
+            <!-- image-->
+            <img class = "hero object-fit-cover w-100" src="images/BD_Hero.jpeg" alt="HeroImg"> 
+
+            <!-- content-->
+            <div class = "hero-content position-absolute top-50 start-0 translate-middle-y ps-2 ms-5"> 
+                <p class="hero-subtitle mb-0"> Welcome to Beautiful Dreamers </p>
+                <h1 class = "hero-title"> Dreamers Make the World Beautiful</h1>
+                <a href = "shop-all-page.html" class="btn btn-coral p-2"> Shop all </a>
+
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- RESPONSIVE GRID-->
+
+    <div class="container-fluid">
+
+        <!--CARD 1-->
+            <div class="row card-right align-items-center justify-content-center py-4 my-3">
+                <div class="col px-4">
+                    <h1 class="display-4 lh-1 fw-normal mb-3 ">Celebrate Differences</h1>
+                    <hr/>
+                    <p class="lead">Inspire your child to embrace their uniqueness and the uniqueness of others by celebrating differences in a kid-friendly kind of way.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                     
+                  </div>
+                </div>
+
+              <div class="col-6">
+                <img src="images/BD_Card1.jpeg" class="rounded d-block mx-lg-auto img-fluid" alt="Card1Img">
+              </div>
+              
+          </div>
+
+
+
+        <!--SHOP-->
+        
+            <!--text-->
+            <div class="row mt-3 pt-4">
+                <div class="col-12 d-flex text-align-center justify-content-center">
+                    <h2> Dream Big</h2>
+                </div>
+            </div>
+    
+            <div class="row pb-4">
+                <div class="col d-flex justify-content-center text-center">
+                    <h3>Explore our latest bedding collections for all adventurers.</h3>
+                </div>
+            </div>
+
+            <p &nbsp></p>
+
+            <!--Cards-->
+            <div class="row img-row">
+
+                <!--Magical Mermaids-->
+                <div class="card shop-card p-0 m-3">
+                    <img src="images/BD_MermaidSet.jpeg" class="card-img-top border rounded" alt="card1">
+
+                    <div class="d-flex flex-column align-items-center p-4">
+                        <h4 class="mb-3">Magical Mermaids</h4>
+                        <a href="productpage-mermaids.html" class="btn btn-coral w-50 w-md-25">Shop now</a>
+                    </div>
+                </div>
+
+                <!--Underwater Explorers-->
+                <div class="card shop-card p-0 m-3 ">
+                    <img src="images/BD_UnderwaterSet.jpeg" class="card-img-top border rounded" alt="card2">
+
+                    <div class="d-flex flex-column align-items-center p-4 ">
+                        <h4 class="mb-3">Underwater Explorers</h4>
+                        <a href="productpage-underwater.html" class="btn btn-coral w-50 w-md-25">Shop now</a>
+                    </div>
+                </div>
+
+                <!--Space Adventures-->
+                <div class="card shop-card p-0 m-3 ">
+                    <img src="images/BD_SpaceSet.jpeg" class="card-img-top border rounded" alt="card3">
+
+                    <div class="d-flex flex-column align-items-center p-4">
+                        <h4 class="mb-3">Space Adventures</h4>
+                        <a href="productpage-space.html" class="btn btn-coral w-50 w-md-25">Shop now</a>
+                    </div>
+                </div>
+            </div>
+
+            <p &nbsp></p>
+
+        
+
+        <!--CARD 2-->
+
+        <div class="row card-left align-items-center justify-content-center py-4 my-3">
+            <div class="col-6">
+                <img src="images/BD_Card2.jpeg" class="rounded d-block mx-lg-auto img-fluid" alt="Card1Img">
+              </div>
+
+
+            <div class="col px-4">
+                <h1 class="display-4 fw-normal mb-3 ">Improve Your Child’s Sleep</h1>
+                <hr/>
+                <p class="lead">Create a healthy sleep environment with hypoallergenic materials so your  child can rest easy. Provide comfort, quality rest, and a place to bond over storytime.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                 
+              </div>
+            </div>
+
+          
+          
+        </div>
+
+
+        <!--Parent Voices-->
+            <div class="row home-page my-5 py-4">
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <h2> Parent Voices</h2>
+                </div>
+
+                <p &nbsp></p>
+
+                <div class="col-12">
+                    <div id = "parentCarousel" class="carousel  carousel-dark slide">
+                        <div class="carousel-inner">
+
+                            <!--Carousel Page 1-->
+                            <div class="carousel-item active">
+
+                                <!--old mx-5-->
+
+                                <div class="d-flex justify-content-center px-2 px-md-5">
+
+                                    <!--Parent Voice 1-->
+                                    <div class="col-10 col-md-6 col-lg-4 d-flex d-lg-block d-md-block d-sm-block flex-column align-items-center text-center px-2 px-md-3">
+                                        <img src="images/Stars.svg" class = "img-fluid stars mb-3" alt="stars">
+                                        <p class="d-block w-100"> "The inclusive designs mean so much to our family. Seeing characters that look like our kids on their bedding <span class="fw-bold"> brings smiles every night.</span>"</p>
+                                        <p>- The Martinez Family</p>
+                                    </div>
+
+                                    <!--Parent Voice 2 -->
+                                    <div class="col-md-6 col-lg-4 d-flex d-lg-block d-md-block d-none flex-column align-items-center text-center px-2 px-md-3">
+                                        <img src="images/Stars.svg" class = "img-fluid stars mb-3" alt="stars">
+                                        <p class="d-block w-100"> "As a single dad, I love how <span class="fw-bold">these designs spark my son's imagination.</span> The space-themed set has become a nightly launch pad for our bedtime stories."</p>
+                                        <p>- Alex P.</p>
+                                    </div>
+
+                                    <!--Parent Voice 3-->
+                                    <div class="col-lg-4 d-flex d-lg-block d-none flex-column align-items-center text-center px-2 px-md-3">
+                                        <img src="images/Stars.svg" class = "img-fluid stars mb-3" alt="stars">
+                                        <p class="d-block w-100"> "Our daughter with sensory sensitivities adores <span class="fw-bold">the soft, cozy fabric.</span>  It's the first bedding she's truly comfortable with. Thank you for considering all children."</p>
+                                        <p>- Nia and Sam K.</p>
+                                    </div>
+      
+                              </div>
+                            </div>
+
+                            <!--Carousel Page 2-->
+
+                            <div class="carousel-item">
+
+                                <div class="d-flex justify-content-center px-2 px-md-5">
+
+                                    <!--Parent Voice 1-->
+                                    <div class="col d-flex d-lg-block d-md-block d-sm-none flex-column align-items-center text-center px-2 px-md-3">
+                                        <img src="images/Stars.svg" class = "img-fluid stars mb-3" alt="stars">
+                                        <p class="text-align-center d-block w-100"> "The representation in these designs makes my heart swell. My son points to the characters and says 'Look, that one has hearing aids just like me!' These aren't just sheets - <span class="fw-bold">they're confidence builders</span>."</p>
+                                        <p>- James T.</p>
+                                    </div>
+                                    
+
+                                    <!--Parent Voice 2 -->
+                                    <div class="col d-flex d-lg-block d-md-block d-sm-block flex-column align-items-center text-center px-2 px-md-3">
+                                        <img src="images/Stars.svg" class = "img-fluid stars mb-3" alt="stars">
+                                        <p class="parent-text d-block w-100"> "As parents of three kids with different interests, we love how <span class="fw-bold">each child can express their personality </span>through their bedding choice. The durability is amazing too - they've held up through countless washes!"</p>
+                                        <p>- The Patel Family</p>
+                                    </div>
+
+                                    <!--Parent Voice 3-->
+                                    <div class="col d-flex d-lg-block d-none flex-column align-items-center text-center px-2 px-md-3">
+                                        <img src="images/Stars.svg" class = "img-fluid stars mb-3" alt="stars">
+                                        <p class="text-align-center d-block w-100"> "My children are from different cultural backgrounds, and these designs have become <span class="fw-bold">a beautiful way to celebrate both their heritages</span>. The thoughtful inclusivity makes every night special."</p>
+                                        <p>- Maria & David K.</p>
+                                    </div>
+      
+                              </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="row mt-5">
+                            <div class="col">
+                                <!--Page Indicators-->
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#parentCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#parentCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <!-- Previous Page Button-->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#parentCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+
+                        <!-- Next Page Button-->
+                        <button class="carousel-control-next" type="button" data-bs-target="#parentCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        
+                            
+                        
+                    </div>
+                </div>
+            </div>
+
+
+        <!--CARD 3-->
+
+
+        <div class="row card-right align-items-center justify-content-center py-4 my-3">
+            <div class="col px-4">
+                <h1 class="display-4 fw-normal lh-1 mb-0 ">Reflect</h1>
+                <h1 class="display-4 fw-normal lh-1 mb-3 ">Your Style</h1>
+                <hr/>
+                <p class="lead">Decorate your child’s room with modern and sophisticated colors and prints that kids can use for years. A perfect blend of childhood whimsy  and works-for-the-whole-house style.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                 
+              </div>
+            </div>
+
+          <div class="col-6">
+            <img src="images/BD_Card3.jpeg" class="rounded d-block mx-lg-auto img-fluid" alt="Card1Img">
+          </div>
+          
+        </div>
+
+
+
+        <!-- Our Story Panel -->
+            <div class="row justify-content-center d-lg-block d-none py-4 my-4 ">
+                <div class="col-12 position-relative d-flex justify-content-center">
+
+                    <!--Image-->
+                    <img class="img-fluid our-story" src="images/AdobeStock_301500590.jpeg" loading = "lazy" alt="ourstoryimg">
+
+                    <!--Text-->
+                    
+                        <div class="position-absolute top-50 start-50 translate-middle text-center px-4 py-3"> 
+                            <h3 class="text-white"> Inclusive and modern designs with your kid’s wellbeing in mind.</h3>
+
+                            <a href="#" class="text-decoration-none"> 
+                                <h6 class="our-story-link"> our story </h6> 
+                            </a>
+
+                        </div>
+                </div>
+            </div>
+
+
+        <!--FOOTER-->
+        <div class="row footer pt-4 mt-4">
+            <!-- Quick Links -->
+            <div class="col-12 col-md-6 col-lg-4 my-4 py-4">
+                <p class="text-uppercase mb-3">Quick Links</p>
+                <hr/>
+                <div class="d-flex flex-column gap-2">
+                    <a href="shop-all-page.html" class="text-decoration-none footer-text">Shop All Collections</a>
+                    <a href="#" class="text-decoration-none footer-text">About Us</a>
+                    <a href="#" class="text-decoration-none footer-text">Our Mission</a>
+                    <a href="#" class="text-decoration-none footer-text">FAQs</a>
+                    <a href="#" class="text-decoration-none footer-text">Contact Us</a>
+                </div>
+            </div>
+        
+            <!-- Customer Service -->
+            <div class="col-12 col-md-6 col-lg-4 my-4 py-4">
+                <p class="text-uppercase mb-3">Customer Service</p>
+                <hr/>
+                <div class="d-flex flex-column gap-2">
+                    <a href="#" class="text-decoration-none footer-text">Shipping Information</a>
+                    <a href="#" class="text-decoration-none footer-text">Returns & Exchanges</a>
+                    <a href="#" class="text-decoration-none footer-text">Care Instructions</a>
+                    <a href="#" class="text-decoration-none footer-text">Size Guide</a>
+                </div>
+            </div>
+        
+            <!-- Get Updated -->
+            <div class="col-12 col-lg-4 my-4 py-4">
+                <p class="text-uppercase mb-3">Get Updated</p>
+                <hr/>
+                <div class="w-100">
+                    <div id = "subscribeAlertHolder-footer"> </div>
+
+                    <div class="input-group my-4">
+                        <input type="email" class="form-control rounded-start-3" id= "subscribeInput-footer" placeholder="Enter your email" aria-label="Enter your email">
+                        <button class="btn btn-coral" type="button" id = "subscribeButton-footer" onClick = "checkEmail('footer')">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+          
+    </div>
+    
+</body>
+</html>
